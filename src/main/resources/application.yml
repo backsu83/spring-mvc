@@ -1,0 +1,21 @@
+
+spring:
+  jmx:
+    enabled: false
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem:testdb;database_to_upper=false;DB_CLOSE_DELAY=-1
+      username: sa
+      password:
+      driverClassName: org.h2.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        ddl_auto: create
+
+apis:
+  content:
+    serviceKey: 325DF224F710B78476FBC73E36C771DC989DB82724FE40D6966AD7FEC3146E5
+    host: http://kradata.kra.co.kr:8082
